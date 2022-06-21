@@ -1,22 +1,19 @@
-import logo from './logo.svg';
+
+import { Button, NumberInput , DropDownInput} from 'get-life-ts-components';
+
 import './App.css';
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+        
+        <NumberInput  isCurrency={true} />
+        
+        <Button label='hello' />
+
+        <DropDownInput optionList={[ { value: '1', label: '1' } , { value: '2', label: '2' }]} />
+
       </header>
     </div>
   );
