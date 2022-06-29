@@ -1,5 +1,5 @@
 
-import { Button, NumberInput , DropDownInput} from 'get-life-ts-components';
+import { Button, NumberInput , DropDown, SingleSelect, InsuranceCalendarBlock } from 'get-life-ts-components';
 
 import './App.css';
 
@@ -12,11 +12,19 @@ function App() {
         
         <Button label='hello' />
 
-        <DropDownInput optionList={[ { value: '1', label: '1' } , { value: '2', label: '2' }]} />
+        <DropDown options={[ { value: '1', label: '1' } , { value: '2', label: '2' }]} />
+
+        <SingleSelect options={[ 
+          { label: 'label a', value: 'a' }, 
+          { label: 'label b', value: 'b' },
+        ]
+        }/>
+
+        <InsuranceCalendarBlock />
 
       </header>
     </div>
-  );
+  ); 
 }
 
 export default App;
