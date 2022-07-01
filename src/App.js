@@ -1,5 +1,5 @@
 
-import { Button, NumberInput , DropDown, SingleSelect, InsuranceCalendarBlock, AdditionalProtection } from 'get-life-ts-components';
+import { Calendar, Button, NumberInput , DropDown, SingleSelect, InsuranceCalendarBlock, AdditionalProtection } from 'get-life-ts-components';
 
 import './App.css';
 
@@ -23,6 +23,8 @@ function App() {
         }/>
 
         <InsuranceCalendarBlock />
+
+        <Calendar />
 
       </header>
     </div>
