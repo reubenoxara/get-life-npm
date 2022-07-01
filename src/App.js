@@ -1,5 +1,5 @@
 
-import { Button, NumberInput , DropDown, SingleSelect, InsuranceCalendarBlock } from 'get-life-ts-components';
+import { Button, NumberInput , DropDown, SingleSelect, InsuranceCalendarBlock, AdditionalProtection } from 'get-life-ts-components';
 
 import './App.css';
 
@@ -9,6 +9,8 @@ function App() {
       <header className="App-header">
         
         <NumberInput  isCurrency={true} />
+
+        <AdditionalProtection />
         
         <Button label='hello' />
 
